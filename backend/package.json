@@ -1,0 +1,12 @@
+{
+  "name": "tmu-courses-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["tmu", "courses", "api", "torontomu", "university"],
+  "author": "Nawaf Mahmood",
+  "license": "MIT"
+}
