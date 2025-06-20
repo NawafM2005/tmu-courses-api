@@ -30,7 +30,7 @@ https://tmu-courses-api.onrender.com
 | `/programs/:program`   | Get all courses in a program       | GET https://tmu-courses-api.onrender.com/programs/Computer Science              |
 | `/course/:code`        | Get course details by course code  | GET https://tmu-courses-api.onrender.com/course/CPS 109                         |
 
-#### 💡 Example Usage (via cURL)
+#### 💡 Example Usage (via curl)
 
     # Get all programs
     curl https://tmu-courses-api.onrender.com/programs
