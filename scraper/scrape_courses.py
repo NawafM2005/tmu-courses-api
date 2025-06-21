@@ -26,7 +26,7 @@ processed_count = 0
 
 # ✅ Start Playwright once, outside the loop
 with sync_playwright() as p:
-    browser = p.chromium.launch()
+    browser = p.chromium.launch(headless=False)
 
     for row in rows:
         link = row.find("td").find("a")
