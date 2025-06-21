@@ -42,41 +42,42 @@ https://tmu-courses-api.onrender.com
     curl https://tmu-courses-api.onrender.com/course/ACC 100
 
 ---
+Install the package in your Node.js project:
 
-### 📦 Using the NPM Package
+```bash
+npm install tmu-courses-api
+```
 
-Install the package for local/offline usage:
+Then use it in your code:
 
-    npm install tmu-courses-api
+```js
+const tmuCourses = require('tmu-courses-api');
 
-#### 🛠 Basic Usage
+// 🔹 Get all program names
+console.log(tmuCourses.getPrograms());
 
-    const tmuCourses = require('tmu-courses-api');
+// 🔹 Get all courses in a specific program
+console.log(tmuCourses.getCourses("Computer Science"));
 
-    // Get all program names
-    console.log(tmuCourses.getPrograms());
+// 🔹 Search for courses by keyword (code or title)
+console.log(tmuCourses.searchCourses("CPS"));
+```
 
-    // Get all courses for the "Computer Science" program
-    console.log(tmuCourses.getCoursesByProgram('Computer Science'));
+---
 
-    // Get details for a specific course
-    console.log(tmuCourses.getCourseByCode('ACC 100'));
+## ✅ Available Functions
 
-#### ✅ Key Features
-
-- **Offline access** to all TMU course data  
-- **No rate limits** or network latency  
-- **Regular updates** aligned with each academic term  
+| Function                  | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `getPrograms()`          | Returns an array of all TMU program names                                   |
+| `getCourses(name)`       | Returns an array of courses for the given program name                      |
+| `searchCourses(keyword)` | Returns all courses where the code or title includes the keyword (case-insensitive) |
 
 ---
 
 ## 📚 Data Sources
 
-All course and program data is sourced from:
-
-- The [TMU Official Academic Calendar](https://www.torontomu.ca/calendar/)  
-- Published course syllabi  
-- Verified across multiple academic years and semesters  
+All data is scraped and parsed from the [Toronto Metropolitan University Official Academic Calendar](https://www.torontomu.ca/calendar/) and regularly updated to reflect the latest curriculum.
 
 ---
 
@@ -84,13 +85,12 @@ All course and program data is sourced from:
 
 We welcome contributions! You can:
 
-- 🐛 Report issues or data inaccuracies via [GitHub Issues](#)  
-- 🌟 Suggest new features or endpoints  
-- 🔧 Submit pull requests for improvements or bug fixes  
+- 🐛 Report issues or data inaccuracies via [GitHub Issues](../../issues)
+- 🌟 Suggest new features or endpoints
+- 🔧 Submit pull requests for improvements or bug fixes
 
 ---
 
 ## 📄 License
 
-MIT © 2023–2025 TMU Courses API
-"""
+MIT © 2023–2025 Nawaf Mahmood — TMU Courses API
