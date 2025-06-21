@@ -75,6 +75,46 @@ console.log(tmuCourses.getCourses("Computer Science"));
 
 ---
 
+📝 Example Data
+Sample output of getPrograms()
+json
+Copy
+Edit
+[
+  "Accounting",
+  "Computer Science",
+  "Business Technology Management",
+  "Mechanical Engineering",
+  "Psychology"
+]
+Sample output of getCourses("Computer Science")
+json
+Copy
+Edit
+[
+  {
+    "code": "CPS 109",
+    "title": "Introduction to Programming",
+    "description": "Basic programming concepts using Python.",
+    "credits": 3,
+    "prerequisites": []
+  },
+  {
+    "code": "CPS 211",
+    "title": "Data Structures",
+    "description": "Study of data organization and manipulation techniques.",
+    "credits": 3,
+    "prerequisites": ["CPS 109"]
+  },
+  {
+    "code": "CPS 305",
+    "title": "Algorithms",
+    "description": "Introduction to algorithms and complexity analysis.",
+    "credits": 3,
+    "prerequisites": ["CPS 211"]
+  }
+]
+
 ## 📚 Data Sources
 
 All data is scraped and parsed from the [Toronto Metropolitan University Official Undergraduate Calendar](https://www.torontomu.ca/calendar/2025-2026/courses/) and regularly updated to reflect the latest curriculum.
