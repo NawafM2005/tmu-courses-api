@@ -65,7 +65,6 @@ console.log(tmuCourses.getCourses("Computer Science"));
 ```
 
 ---
-
 ## ✅ Available Functions
 
 | Function                  | Description                                                                 |
@@ -75,11 +74,11 @@ console.log(tmuCourses.getCourses("Computer Science"));
 
 ---
 
-📝 Example Data
-Sample output of getPrograms()
-json
-Copy
-Edit
+## 📝 Example Data
+
+### Sample output of `getPrograms()`
+
+```json
 [
   "Accounting",
   "Computer Science",
@@ -87,10 +86,11 @@ Edit
   "Mechanical Engineering",
   "Psychology"
 ]
-Sample output of getCourses("Computer Science")
-json
-Copy
-Edit
+```
+
+### Sample output of `getCourses("Computer Science")`
+
+```json
 [
   {
     "code": "CPS 109",
@@ -114,6 +114,9 @@ Edit
     "prerequisites": ["CPS 211"]
   }
 ]
+```
+
+---
 
 ## 📚 Data Sources
 
