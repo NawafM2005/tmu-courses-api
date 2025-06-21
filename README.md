@@ -93,27 +93,44 @@ console.log(tmuCourses.getCourses("Computer Science"));
 ```json
 [
   {
+    "code": "CPS 101",
+    "name": "Introduction to App Development",
+    "description": "This course introduces programming to non-computer science majors. Students will learn how to program apps for mobile devices using a visual programming. Topics include: basic programming concepts (conditionals, events, variables, loops, procedures), using device sensors and components (camera, accelerometer, gyroscope, GPS, audio, internet connectivity), designing and implementing apps (user interface, texting apps, files I/O, drawing apps, creating interactive games). The programming language used in this course is MIT App Inventor 2.",
+    "weekly contact": "Lecture 3 hrs. Lab 1 hr.",
+    "gpa weight": "1.00",
+    "billing unit": "1",
+    "course count": "1.00",
+    "prerequisites": "None",
+    "corequisites": "None",
+    "antirequisites": "Not available for Computer Science students (CS001, CS002).",
+    "custom requisites": "None"
+  },
+  {
+    "code": "CPS 106",
+    "name": "Introduction to Multimedia Computation",
+    "description": "Introduction to computing and programming. This course introduces the student to\ncomputers and how to solve problems by developing algorithms and writing programs.\nThe programming language is Python, and the problems are taken from the domain of\nmultimedia.",
+    "weekly contact": "Lecture 3 hrs. Lab 2 hrs.",
+    "gpa weight": "1.00",
+    "billing unit": "1",
+    "course count": "1.00",
+    "prerequisites": "None",
+    "corequisites": "None",
+    "antirequisites": "CPS 109",
+    "custom requisites": "None"
+  },
+  {
     "code": "CPS 109",
-    "title": "Introduction to Programming",
-    "description": "Basic programming concepts using Python.",
-    "credits": 3,
-    "prerequisites": []
+    "name": "Computer Science I",
+    "description": "An introductory programming course designed to introduce fundamental Computer Science concepts such as abstraction, modelling and algorithm design. Emphasis is placed on producing correct software.",
+    "weekly contact": "Lecture 3 hrs. Lab 2 hrs.",
+    "gpa weight": "1.00",
+    "billing unit": "1",
+    "course count": "1.00",
+    "prerequisites": "None",
+    "corequisites": "None",
+    "antirequisites": "CPS 106",
+    "custom requisites": "None"
   },
-  {
-    "code": "CPS 211",
-    "title": "Data Structures",
-    "description": "Study of data organization and manipulation techniques.",
-    "credits": 3,
-    "prerequisites": ["CPS 109"]
-  },
-  {
-    "code": "CPS 305",
-    "title": "Algorithms",
-    "description": "Introduction to algorithms and complexity analysis.",
-    "credits": 3,
-    "prerequisites": ["CPS 211"]
-  }
-]
 ```
 
 ---
