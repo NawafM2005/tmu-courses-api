@@ -62,8 +62,6 @@ console.log(tmuCourses.getPrograms());
 // 🔹 Get all courses in a specific program
 console.log(tmuCourses.getCourses("Computer Science"));
 
-// 🔹 Search for courses by keyword (code or title)
-console.log(tmuCourses.searchCourses("CPS"));
 ```
 
 ---
@@ -74,23 +72,12 @@ console.log(tmuCourses.searchCourses("CPS"));
 |--------------------------|-----------------------------------------------------------------------------|
 | `getPrograms()`          | Returns an array of all TMU program names                                   |
 | `getCourses(name)`       | Returns an array of courses for the given program name                      |
-| `searchCourses(keyword)` | Returns all courses where the code or title includes the keyword (case-insensitive) |
 
 ---
 
 ## 📚 Data Sources
 
-All data is scraped and parsed from the [Toronto Metropolitan University Official Academic Calendar](https://www.torontomu.ca/calendar/) and regularly updated to reflect the latest curriculum.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! You can:
-
-- 🐛 Report issues or data inaccuracies via [GitHub Issues](../../issues)
-- 🌟 Suggest new features or endpoints
-- 🔧 Submit pull requests for improvements or bug fixes
+All data is scraped and parsed from the [Toronto Metropolitan University Official Undergraduate Calendar](https://www.torontomu.ca/calendar/2025-2026/courses/) and regularly updated to reflect the latest curriculum.
 
 ---
 
