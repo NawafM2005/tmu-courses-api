@@ -42,6 +42,9 @@ https://tmu-courses-api.onrender.com
     curl https://tmu-courses-api.onrender.com/course/ACC 100
 
 ---
+
+### 📦 Using the NPM Package
+
 Install the package in your Node.js project:
 
 ```bash
